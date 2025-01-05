@@ -154,80 +154,42 @@ const NavigationMenu = () => {
               </div>
 
               {/* Right Side Icons */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center gap-4 space-x-4">
 
-                <div className=" p-4 ">
+                <div className="  ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 20"
-                    fill="white"
-                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="w-5 h-8 cursor-pointer"
                   >
-                    <circle cx="12" cy="8" r="3" fill="white" />
-
                     <path
-                      d="M10 14c0-2 2-3 2-3s2 1 2 3v4H10v-4z"
-                      fill="white"
-                    />
-
-                    <circle cx="6.5" cy="9" r="2" fill="white" />
-                    <path
-                      d="M5.5 14c0-1.5 1.5-2.5 1.5-2.5s1.5 1 1.5 2.5v2.5H5.5V14z"
-                      fill="white"
-                    />
-                    <circle cx="17.5" cy="9" r="2" fill="white" />
-                    <path
-                      d="M16.5 14c0-1.5 1.5-2.5 1.5-2.5s1.5 1 1.5 2.5v2.5h-3V14z"
-                      fill="white"
+                      d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-4.418 0-8 2.015-8 4.5V20a1 1 0 001 1h14a1 1 0 001-1v-1.5c0-2.485-3.582-4.5-8-4.5z"
                     />
                   </svg>
-
-
 
                 </div>
 
 
                 {/* Moon Icon */}
                 <div className="flex items-center space-x-4">
-                  <button
-                    onClick={toggleTheme}
-                    className="p-2 rounded hover:bg-gray-700"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="w-5 h-8 cursor-pointer"
                   >
-                    {isDarkMode ? (
-                      <svg
-                        className="w-6 h-6 text-yellow-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 3v1m0 16v1m8-9h1M4 12H3m15.364-7.364l-.707.707M6.343 17.657l-.707.707M16.95 16.95l-.707.707M7.757 7.757l-.707.707"
-                        />
-                      </svg>
-                    ) : (
-                      <svg
-                        className="w-6 h-6 text-gray-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M20.354 15.354A9 9 0 118.646 3.646 9.003 9.003 0 0020.354 15.354z"
-                        />
-                      </svg>
-                    )}
-                  </button>
+                    <path
+                      d="M21.752 15.002a8.385 8.385 0 01-6.268 3.498 8.503 8.503 0 01-8.5-8.5c0-3.335 1.986-6.324 5.055-7.652.35-.154.741-.135 1.065.053a.94.94 0 01.432.984 6.556 6.556 0 000 6.03c.3.681.748 1.294 1.3 1.775.92.8 2.13 1.244 3.367 1.244a6.556 6.556 0 004.645-1.894.94.94 0 01.982-.432c.188.072.347.197.453.365a8.385 8.385 0 013.498 6.268c.015.17-.022.345-.097.503a1.012 1.012 0 01-.481.481z"
+                    />
+                  </svg>
+
+
                 </div>
 
                 {/* Mail Icon */}
                 <svg
-                  className="w-5 h-5 cursor-pointer"
+                  className="w-5 h-8 cursor-pointer"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -242,7 +204,7 @@ const NavigationMenu = () => {
 
                 {/* Search Icon */}
                 <svg
-                  className="w-5 h-5 cursor-pointer"
+                  className="w-5 h-8 cursor-pointer"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -257,7 +219,7 @@ const NavigationMenu = () => {
 
                 {/* Share Icon */}
                 <svg
-                  className="w-5 h-5 cursor-pointer"
+                  className="w-5 h-8 cursor-pointer"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

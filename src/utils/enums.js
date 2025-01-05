@@ -83,7 +83,28 @@ export const MAINMENUITEMS = [
   },
   {
     title: "BROKER REVIEWS",
-    items: [
+    items1: [
+      "IPO Reports (Historic)",
+      "eBook - IPO Guide",
+      "IPO FAQs",
+      "IPO Articles",
+      "IPO Message Board",
+    ],
+    items2: [
+      "IPO Reports (Historic)",
+      "eBook - IPO Guide",
+      "IPO FAQs",
+      "IPO Articles",
+      "IPO Message Board",
+    ],
+    items3: [
+      "IPO Reports (Historic)",
+      "eBook - IPO Guide",
+      "IPO FAQs",
+      "IPO Articles",
+      "IPO Message Board",
+    ],
+    items4: [
       "IPO Reports (Historic)",
       "eBook - IPO Guide",
       "IPO FAQs",
@@ -93,7 +114,31 @@ export const MAINMENUITEMS = [
   },
   {
     title: "STOCK MARKET",
-    items: [
+    items1: [
+      "Current NCD Issues",
+      "NCD Reviews",
+      "NCD Subscription (Live)",
+      "NCD Calendar",
+      "NCD Glossary",
+      "NCD Articles",
+    ],
+    items2: [
+      "Current NCD Issues",
+      "NCD Reviews",
+      "NCD Subscription (Live)",
+      "NCD Calendar",
+      "NCD Glossary",
+      "NCD Articles",
+    ],
+    items3: [
+      "Current NCD Issues",
+      "NCD Reviews",
+      "NCD Subscription (Live)",
+      "NCD Calendar",
+      "NCD Glossary",
+      "NCD Articles",
+    ],
+    items4: [
       "Current NCD Issues",
       "NCD Reviews",
       "NCD Subscription (Live)",
@@ -104,7 +149,28 @@ export const MAINMENUITEMS = [
   },
   {
     title: "NRI",
-    items: [
+    items1: [
+      "Current Rights Issues",
+      "Rights Reviews",
+      "Rights Calendar",
+      "Rights Issue Glossary",
+      "Rights Issue Message Board",
+    ],
+    items2: [
+      "Current Rights Issues",
+      "Rights Reviews",
+      "Rights Calendar",
+      "Rights Issue Glossary",
+      "Rights Issue Message Board",
+    ],
+    items3: [
+      "Current Rights Issues",
+      "Rights Reviews",
+      "Rights Calendar",
+      "Rights Issue Glossary",
+      "Rights Issue Message Board",
+    ],
+    items4: [
       "Current Rights Issues",
       "Rights Reviews",
       "Rights Calendar",
@@ -114,7 +180,28 @@ export const MAINMENUITEMS = [
   },
   {
     title: "CITY INFO", 
-    items: [
+    items1: [
+      "Buyback (Tender Offer)",
+      "Buyback (Open Market)",
+      "Buyback Calendar",
+      "Buyback Message Board",
+      "Learn about Buybacks",
+    ],
+    items2: [
+      "Buyback (Tender Offer)",
+      "Buyback (Open Market)",
+      "Buyback Calendar",
+      "Buyback Message Board",
+      "Learn about Buybacks",
+    ],
+    items3: [
+      "Buyback (Tender Offer)",
+      "Buyback (Open Market)",
+      "Buyback Calendar",
+      "Buyback Message Board",
+      "Learn about Buybacks",
+    ],
+    items4: [
       "Buyback (Tender Offer)",
       "Buyback (Open Market)",
       "Buyback Calendar",

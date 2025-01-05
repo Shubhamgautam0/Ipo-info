@@ -31,7 +31,8 @@ function IPODashboard() {
                   <div key={index} className="flex">
                     <div className="flex">
                       <span className="text-yellow-400 mr-2">⚡</span>
-                      <span
+                      <a 
+                      href=""
                         className={
                           broker.highlight
                             ? "text-red-600 font-medium bg-red-100"
@@ -50,7 +51,7 @@ function IPODashboard() {
                         > 
                           {broker.price}
                         </span>
-                      </span>
+                      </a>
                     </div>
                   </div>
                 ))}
@@ -75,7 +76,7 @@ function IPODashboard() {
                 {IPOINFO.map((item, index) => (
                   <div key={index} className="flex">
                     <span className="text-yellow-400 mr-2">⚡</span>
-                    <span className="text-gray-700">{item.title}</span>
+                    <a href="" className="text-gray-700">{item.title}</a>
                   </div>
                 ))}
               </div>
@@ -100,7 +101,7 @@ function IPODashboard() {
                 {MARKETINFO.map((item, index) => (
                   <div key={index} className="flex">
                     <span className="text-yellow-400 mr-2">⚡</span>
-                    <span className="text-gray-700">{item.title}</span>
+                    <a href="" className="text-gray-700">{item.title}</a>
                   </div>
                 ))}
               </div>
