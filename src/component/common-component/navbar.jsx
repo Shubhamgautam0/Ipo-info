@@ -36,52 +36,30 @@ const NavigationMenu = () => {
   const DropdownMenu = ({ items, columns  }) => { 
     const rows = Math.ceil(items.length / columns); 
 
-  // const DropdownMenu = ({sections}) => {
-
     return (
-      // <div className="absolute max-w-screen  mt-3 bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-3 " >
-      //   <div
-      //     className="grid gap-1 auto-rows-auto "
-      //     style={{
-      //       gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))`,
-      //       gridAutoFlow: "column",
-      //       width: `${columns * 200}px`,
-      //       minWidth: "max-content",
-      //     }}
-      //   >
-      //     {items.map((item, index) => (  
-      //       <div
-      //         key={index} 
-      //         onClick={menuItemsClick}  
-      //         className="px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded transition-colors duration-150 truncate"
-      //       >  
-      //         {item} 
-      //       </div>
-
-      //     ))}
-      //   </div>
-      // </div> 
-      <div className="relative">
-        {/* Dropdown menu container */}
-        <div className="absolute bg-gray-800 border border-gray-700 text-gray-300 shadow-lg rounded-lg p-5 grid grid-cols-6 gap-4">
-          {MAINMENUITEMS.map((section, index) => ( 
-            <div key={index} className="space-y-2">
-              {/* Section title */}
-              <h3 className="font-semibold text-white">{section.title}</h3>
-              {/* Section items */}
-              {section.items.map((item, idx) => ( 
-                <a
-                  key={idx}
-                  href="#"
-                  className="block text-sm hover:text-yellow-300 hover:underline"
-                >
-                  {item}
-                </a>
-              ))}
+      <div className="absolute max-w-screen  mt-3 bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-3 " >
+        <div
+          className="grid gap-1 auto-rows-auto "
+          style={{
+            gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))`,
+            gridAutoFlow: "column",
+            width: `${columns * 200}px`,
+            minWidth: "max-content",
+          }}
+        >
+          {items.map((item, index) => (  
+            <div
+              key={index} 
+              onClick={menuItemsClick}  
+              className="px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded transition-colors duration-150 truncate"
+            >  
+              {item} 
             </div>
+
           ))}
         </div>
-      </div>
+      </div> 
+      
     );
   };
 
