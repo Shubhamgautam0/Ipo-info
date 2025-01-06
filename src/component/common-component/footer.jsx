@@ -3,34 +3,33 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-gray-50 text-gray-800 font-sans">
-      <div className="grid grid-cols-4 gap-8 max-w-7xl ml-4 mr-0 py-8"> 
-        {/* Contact Us */}
+      <div className="grid grid-cols-4 gap-8 max-w-7xl ml-4 mr-0 py-8">
+        
         <div className="text-center border bg-slate-100 hover:bg-slate-200 rounded-lg ">
           <h2 className="font-semibold text-lg">CONTACT US</h2>
         </div>
 
-        {/* Sitemap */}
+        
         <div className="text-center border bg-slate-100 hover:bg-slate-200 rounded-lg">
           <h2 className="font-semibold text-lg">SITEMAP</h2>
         </div>
 
-        {/* Advertise With Us */}
+       
         <div className="text-center border bg-slate-100 hover:bg-slate-200 rounded-lg">
           <h2 className="font-semibold text-lg">ADVERTISE WITH US</h2>
         </div>
 
-        {/* About Us */}
+       
         <div className="text-center border bg-slate-100 hover:bg-slate-200 rounded-lg">
           <h2 className="font-semibold text-lg">ABOUT US</h2>
         </div>
       </div>
 
-      {/* Main Content */}
+      
       <div className="grid grid-cols-4 gap-10  max-w-7xl ml-3 mr-0 pb-8">
-        {/* Best Discount Brokers */}
         <div>
           <h3 className="font-bold text-lg mb-4 lg:ml-4">Best Discount Broker in India</h3>
-          <ul className="space-y-2  mx-auto text-center"> 
+          <ul className="space-y-2  mx-auto text-center">
             <li>
               <span className="font-medium">Zerodha</span> (₹20 per Trade)
             </li>
@@ -49,7 +48,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Best Full-Service Brokers */}
         <div>
           <h3 className="font-bold text-lg mb-4 lg:ml-2">Best Full-Service Brokers in India</h3>
           <ul className="space-y-2 lg:ml-4 mx-auto text-center">
@@ -61,10 +59,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Unlimited Monthly Trading Plans */}
         <div>
           <h3 className="font-bold text-lg mb-4 lg:ml-2">Unlimited Monthly Trading Plans</h3>
-          <ul className="space-y-2 lg:ml-4 mx-auto text-center"> 
+          <ul className="space-y-2 lg:ml-4 mx-auto text-center">
             <li>
               <span className="font-medium bg-yellow-100 px-1">Prostocks</span> (₹899 Unlimited)
             </li>
@@ -73,7 +70,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Compare Share Broker */}
         <div>
           <h3 className="font-bold text-lg mb-4 lg:ml-2">Compare Share Broker in India</h3>
           <ul className="space-y-2 lg:ml-4 mx-auto text-center">
@@ -88,7 +84,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="text-center py-8 bg-gray-100">
         <h3 className="font-bold text-lg mb-4">Download Mobile App</h3>
         <div className="flex justify-center space-x-4">

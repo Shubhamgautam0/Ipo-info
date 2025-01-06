@@ -20,6 +20,8 @@ function IPOList() {
         <Section title="Full-service Brokers Review" data={FULLSERVICEBROKER} />
         <Section title="IPO News Alerts" data={IPONEWSALERT} /> 
         <Section title="eBooks (Learn IPO, RI, BB, NCD)" data={EBOOKDATA} /> 
+        {/* <Section title="eBooks (Learn IPO, RI, BB, NCD)" data={EBOOKDATA} />  */}
+
       </div>
     </div>
   );

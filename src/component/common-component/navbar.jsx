@@ -2,30 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SidebarMenu from "./sidebar";
 import { MAINMENUITEMS } from "../../utils";
-import ThemeLightDark from "./dark-lightmode";
 
 const NavigationMenu = () => {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [isDarkMode, setIsDarkMode] = useState(false)
 
-  useEffect(() => {
-    const savedMode = localStorage.getItem("theme");
-    if (savedMode) {
-      document.documentElement.classList.toggle("dark", savedMode === "dark");
-      setIsDarkMode(savedMode === "dark");
-    }
-  }, []);
 
-  const toggleTheme = () => {
-    setIsDarkMode((prev) => {
-      const newMode = !prev;
-      document.documentElement.classList.toggle("dark", newMode);
-      localStorage.setItem("theme", newMode ? "dark" : "light");
-      return newMode;
-    });
-  }; 
 
   const handleHomeClick = () => {
     navigate("../");
@@ -33,8 +16,8 @@ const NavigationMenu = () => {
   const menuItemsClick = () => {
     navigate("/ipo/ipo_dashboard.asp")
   }
-  const DropdownMenu = ({ items, columns  }) => { 
-    const rows = Math.ceil(items.length / columns); 
+  const DropdownMenu = ({ items, columns }) => {
+    const rows = Math.ceil(items.length / columns);
 
     return (
       <div className="absolute max-w-screen  mt-3 bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-3 " >
@@ -47,31 +30,50 @@ const NavigationMenu = () => {
             minWidth: "max-content",
           }}
         >
-          {items.map((item, index) => (  
+          {items.map((item, index) => (
             <div
-              key={index} 
-              onClick={menuItemsClick}  
+              key={index}
+              onClick={menuItemsClick}
               className="px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded transition-colors duration-150 truncate"
-            >  
-              {item} 
+            >
+              {item}
             </div>
 
           ))}
         </div>
-      </div> 
-      
+      </div>
+
     );
   };
 
   return (
     <>
       {/* Header */}
-      <div className="">
-        <img
-          src="https://www.chittorgarh.net/images/chittorgarh-logo.png"
-          alt=""
-        />
+      <div className="flex p-4">
+        <div className="">
+          <img
+            src="https://www.chittorgarh.net/images/chittorgarh-logo.png"
+            alt=""
+          />
+        </div>
+        <div className="  m-auto ">
+          <div className="flex flex-col items-center space-x-2">
+            <a
+              href="https://www.ProStocks.com"
+              className="text-blue-600 text-sm font-medium underline"
+            >
+              Free Delivery, Others @ flat ₹15
+            </a>
+            <span className="bg-green-100 text-green-600 text-xs font-medium px-2 py-1 rounded">
+              PS
+            </span>
+            <div className="text-gray-500 text-sm">
+              Free Account Opening + AMC Free Demat
+            </div>
+          </div>
+        </div>
       </div>
+
 
       <div className="bg-gray-600 text-white ">
         {/* Main Navigation */}
@@ -81,9 +83,9 @@ const NavigationMenu = () => {
             <SidebarMenu />
 
             {/* Home Icon */}
-            <div className="mr-6" onClick={handleHomeClick}>
+            <div className="" onClick={handleHomeClick}>
               <svg
-                className="w-6 h-6 text-green-400"
+                className="w-6 h-6 text-white hover:bg-gray-700"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -129,23 +131,23 @@ const NavigationMenu = () => {
                       </svg>
                     </button>
 
-                    {/* Dropdown */}
+                   {/* // Dropdown */} 
                     {activeDropdown === index && (
-                      <DropdownMenu  
-                      items={
-                        Array.isArray(item.items1)
-                          ? [
-                            ...(item.items1 || []),
-                            ...(item.items2 || []),
-                            ...(item.items3 || []),
-                            ...(item.items4 || []),
-                            ...(item.items5 || []),
-                            ...(item.items6 || []), 
-                          ]
-                          : item.items || []
-                      }
-                      columns={item.items1 ? 6 : 1} 
-                      onMouseLeave={() => setActiveDropdown(null)} 
+                      <DropdownMenu
+                        items={
+                          Array.isArray(item.items1)
+                            ? [
+                              ...(item.items1 || []),
+                              ...(item.items2 || []),
+                              ...(item.items3 || []),
+                              ...(item.items4 || []),
+                              ...(item.items5 || []),
+                              ...(item.items6 || []),
+                            ]
+                            : item.items || []
+                        }
+                        columns={item.items1 ? 6 : 1}
+                        onMouseLeave={() => setActiveDropdown(null)}
                       />
                     )}
 
