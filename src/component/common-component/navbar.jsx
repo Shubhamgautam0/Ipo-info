@@ -19,8 +19,8 @@ const NavigationMenu = () => {
   const DropdownMenu = ({ items, columns }) => {
     const rows = Math.ceil(items.length / columns);
 
-    return (
-      <div className="absolute max-w-screen  mt-3 bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-3 " >
+    return ( 
+      <div className="fixed left-0  max-w-screen  mt-3 bg-gray-800 border border-gray-700   p-3 " >
         <div
           className="grid gap-1 auto-rows-auto "
           style={{
@@ -29,7 +29,7 @@ const NavigationMenu = () => {
             width: `${columns * 200}px`,
             minWidth: "max-content",
           }}
-        >
+        > 
           {items.map((item, index) => (
             <div
               key={index}
